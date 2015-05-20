@@ -5,6 +5,7 @@
 The goal of this kata is to make a converter that can make conversions between roman numerals and arabic numbers. Roman numerals were used by (you guessed it) the romans to represent positive numbers. The roman numerals and corresponding values are as follows:
 
 |Roman Numeral|Arabic|
+|---|---|
 |I|1|
 |V|5|
 |X|10|
@@ -16,6 +17,7 @@ The goal of this kata is to make a converter that can make conversions between r
 Roman numerals can also be combined in a subtractive fashion in order to represent values a bit more concisely, namely:
 
 |Roman Numeral|Arabic|
+|---|---|
 |IV|4|
 |IX|9|
 |XL|40|
