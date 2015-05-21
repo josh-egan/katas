@@ -42,5 +42,11 @@ namespace RomanNumeralsConverterKata.Tests
         {
             Assert.That(_converter.ToRoman(arabic), Is.EqualTo(expectedRoman));
         }
+
+        [TestCase("I", 1)]
+        public void can_convert_roman_to_arabic(string roman, int expectedArabic)
+        {
+            Assert.That(_converter.ToArabic(roman), Is.EqualTo(expectedArabic));
+        }
     }
 }

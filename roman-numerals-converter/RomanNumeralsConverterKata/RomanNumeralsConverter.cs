@@ -35,5 +35,10 @@ namespace RomanNumeralsConverterKata
 
             return result;
         }
+
+        public int ToArabic(string romanNumeral)
+        {
+            return 1;
+        }
     }
 }
