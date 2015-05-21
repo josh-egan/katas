@@ -38,7 +38,17 @@ namespace RomanNumeralsConverterKata
 
         public int ToArabic(string romanNumeral)
         {
-            return 1;
+            var result = 0;
+            foreach (var p in Map)
+            {
+                while (romanNumeral.StartsWith(p.Value))
+                {
+                    result += p.Key;
+                    romanNumeral = romanNumeral.Substring(p.Value.Length);
+                }
+            }
+
+            return result;
         }
     }
 }

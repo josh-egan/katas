@@ -44,6 +44,30 @@ namespace RomanNumeralsConverterKata.Tests
         }
 
         [TestCase("I", 1)]
+        [TestCase("II", 2)]
+        [TestCase("III", 3)]
+        [TestCase("IV", 4)]
+        [TestCase("V", 5)]
+        [TestCase("VII", 7)]
+        [TestCase("IX", 9)]
+        [TestCase("X", 10)]
+        [TestCase("XIV", 14)]
+        [TestCase("XV", 15)]
+        [TestCase("XIX", 19)]
+        [TestCase("XXIV", 24)]
+        [TestCase("XXVIII", 28)]
+        [TestCase("XXXIII", 33)]
+        [TestCase("XL", 40)]
+        [TestCase("L", 50)]
+        [TestCase("XC", 90)]
+        [TestCase("C", 100)]
+        [TestCase("CD", 400)]
+        [TestCase("D", 500)]
+        [TestCase("CM", 900)]
+        [TestCase("M", 1000)]
+        [TestCase("MCCCXXXIII", 1333)]
+        [TestCase("MCMXCIX", 1999)]
+        [TestCase("MDCXLIX", 1649)]
         public void can_convert_roman_to_arabic(string roman, int expectedArabic)
         {
             Assert.That(_converter.ToArabic(roman), Is.EqualTo(expectedArabic));
