@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsConverterKata", "RomanNumeralsConverterKata.csproj", "{206DF5C0-1ED3-43DF-B6BE-E5097347D5F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsConverterKata", "RomanNumeralsConverterKata\RomanNumeralsConverterKata.csproj", "{206DF5C0-1ED3-43DF-B6BE-E5097347D5F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsConverterKata.Tests", "..\RomanNumeralsConverterKata.Tests\RomanNumeralsConverterKata.Tests.csproj", "{986FF5B2-B96D-4CB5-8C4E-D3D702824023}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsConverterKata.Tests", "RomanNumeralsConverterKata.Tests\RomanNumeralsConverterKata.Tests.csproj", "{986FF5B2-B96D-4CB5-8C4E-D3D702824023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
