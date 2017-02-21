@@ -8,6 +8,7 @@ I see value in repetition. I also agree that much of the value comes from having
 > If you want to get better at something, repeating practice alone is not enough. You must practice with increased difficulty and challenge. - [Why I Don't Do Code Katas](https://hackhands.com/dont-code-katas/)
 
 ### Kata Resources
+* [CodeWars](https://www.codewars.com)
 * [CodeKata](http://codekata.com/)
 * [exercism.io](http://exercism.io/)
 
