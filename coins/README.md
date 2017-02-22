@@ -30,6 +30,8 @@ Make change using the fewest number of coins possible using legal US coins. You 
 
 Once you can make change using the legal US coins, introduce all new set of coins that includes some or all of the obsolete US coins. Obsolete coins can be found [here](https://en.wikipedia.org/wiki/Coins_of_the_United_States_dollar#Obsolete_coins).
 
+This iteration requires additional logic for determining the least number of coins. For example, `40¢` should yield two twenty-cent pieces, not a quarter, a dime, and a nickel.
+
 |Coin Name|Coin Value|
 |---|---|
 |Half Cent|1/2¢|
@@ -44,7 +46,9 @@ Once you can make change using the legal US coins, introduce all new set of coin
 
 ### Prime Coins
 
-Who says coins should always work out evenly? But does the extra change go to the buyer or the seller? Hmmmmm... (Note that 2 is skipped in this prime series just to keep things a tad more interesting.) In this case, the correct answer should return the correct change (if possible) in as few coins as possible for making the correct change.
+Who says coins should always work out evenly? But does the extra change go to the buyer or the seller? Hmmmmm... 
+
+In this iteration, the correct answer should return the correct change (if possible) in as few coins as possible for making the correct change. (Note that 2 is skipped in this prime series just to keep things a tad more interesting.) 
 
 |Coin Name|Coin Value|
 |---|---|
