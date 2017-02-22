@@ -23,6 +23,7 @@ Make change using the fewest number of coins possible using legal US coins. You 
 |Nickel|5¢|
 |Dime|10¢|
 |Quarter|25¢|
+|Half-Dollar|50¢|
 |Dollar|$1|
 
 ### Historic US Coins
