@@ -48,7 +48,7 @@ This iteration requires additional logic for determining the least number of coi
 
 Who says coins should always work out evenly? But does the extra change go to the buyer or the seller? Hmmmmm... 
 
-In this iteration, the correct answer should return the correct change (if possible) in as few coins as possible for making the correct change. (Note that 2 is skipped in this prime series just to keep things a tad more interesting.) 
+In this iteration, the correct answer should return the correct change (if possible) in as few coins as possible for making the correct change. For example, `6¢` should yield two `3¢` pieces, not one `5¢` piece. (Note that 2 is skipped in this prime series just to keep things a tad more interesting.) 
 
 |Coin Name|Coin Value|
 |---|---|
@@ -58,7 +58,7 @@ In this iteration, the correct answer should return the correct change (if possi
 |D|11¢|
 |E|13¢|
 |F|17¢|
-|G|18¢|
+|G|19¢|
 |H|23¢|
 |I|29¢|
 |J|31¢|

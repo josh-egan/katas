@@ -28,7 +28,7 @@ describe('coin kata', () => {
       expect(cashier.makeChange(0.93, [0.01, 0.25, 0.10, 0.50, 0.05])).to.eql([0.50, 0.25, 0.10, 0.05, 0.01, 0.01, 0.01])
     })
 
-    context('when using current legal us coins', () => {
+    context('when using current legal US coins', () => {
 
       const testCases = [
         {input: 0.01, expected: [0.01]},
@@ -60,7 +60,7 @@ describe('coin kata', () => {
       })
     })
 
-    context('when using historic us coins', () => {    //
+    context('when using historic US coins', () => {    //
       const testCases = [
         {input: 0.005, expected: [0.005]},
         {input: 0.01, expected: [0.01]},
@@ -117,6 +117,36 @@ describe('coin kata', () => {
           const historicUSCoins = [0.005, 0.01, 0.02, 0.03, 0.05, 0.10, 0.20, 0.25, 0.50, 1.00]
 
           expect(cashier.makeChange(testCase.input, historicUSCoins)).to.eql(testCase.expected)
+        })
+      })
+    })
+
+    context('when using prime coins', () => {    //
+      const testCases = [
+        {input: 0.01, expected: []},
+        {input: 0.02, expected: [0.02]},
+        {input: 0.03, expected: [0.03]},
+        {input: 0.04, expected: [0.02, 0.02]},
+        {input: 0.05, expected: [0.05]},
+        {input: 0.06, expected: [0.03, 0.03]},
+        {input: 0.07, expected: [0.07]},
+        {input: 0.08, expected: [0.05, 0.03]},
+        {input: 0.09, expected: [0.07, 0.02]},
+        {input: 0.10, expected: [0.07, 0.03]},
+        {input: 0.11, expected: [0.11]},
+        {input: 0.12, expected: [0.07, 0.05]},
+        {input: 0.13, expected: [0.13]},
+        {input: 0.14, expected: [0.11, 0.03]},
+        {input: 0.15, expected: [0.13, 0.02]},
+        {input: 0.16, expected: [0.13, 0.03]},
+        {input: 0.17, expected: [0.17]},
+      ]
+
+      testCases.forEach(testCase => {
+        it(`should correctly return change for \$${testCase.input}`, () => {
+          const primeCoins = [0.02, 0.03, 0.05, 0.07, 0.11, 0.13, 0.17, 0.19, 0.23, 0.29, 0.31]
+
+          expect(cashier.makeChange(testCase.input, primeCoins)).to.eql(testCase.expected)
         })
       })
     })
